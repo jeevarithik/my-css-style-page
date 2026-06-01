@@ -1,0 +1,426 @@
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f6ff;
+  color: #222;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header style */
+header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #111827;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Section style */
+section {
+  background-color: white;
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+section h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+/* Text styling */
+.text-demo {
+  color: crimson;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+/* Background */
+.background-box {
+  background: linear-gradient(to right, #60a5fa, #a78bfa);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Box model */
+.box-model {
+  width: 300px;
+  background-color: #dbeafe;
+  margin: 20px auto;
+  padding: 25px;
+  border: 5px solid #2563eb;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Border styles */
+.border {
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+}
+
+.solid {
+  border: 3px solid red;
+}
+
+.dotted {
+  border: 3px dotted green;
+}
+
+.dashed {
+  border: 3px dashed blue;
+}
+
+.double {
+  border: 5px double purple;
+}
+
+/* Button */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+/* Link */
+.link-demo {
+  color: #2563eb;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link-demo:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Image */
+.image-demo {
+  width: 300px;
+  border: 5px solid #2563eb;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+.image-demo:hover {
+  opacity: 0.7;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #bfdbfe;
+  width: 180px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-box {
+  background-color: #bbf7d0;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Position */
+.position-parent {
+  position: relative;
+  background-color: #fde68a;
+  height: 180px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.position-child {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: orange;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Display */
+.inline-box {
+  display: inline;
+  background-color: #ddd6fe;
+  padding: 10px;
+}
+
+.block-box {
+  display: block;
+  background-color: #fecaca;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.inline-block-box {
+  display: inline-block;
+  background-color: #a7f3d0;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+/* Form */
+form {
+  width: 350px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/* Overflow */
+.overflow-box {
+  width: 300px;
+  height: 90px;
+  overflow: auto;
+  background-color: #fde68a;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Opacity */
+.opacity-box {
+  background-color: #60a5fa;
+  padding: 25px;
+  width: 250px;
+  text-align: center;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+/* Transform */
+.transform-box {
+  background-color: #fca5a5;
+  width: 180px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.transform-box:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Transition */
+.transition-box {
+  background-color: #f472b6;
+  width: 200px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.transition-box:hover {
+  background-color: #ec4899;
+  width: 280px;
+  color: white;
+}
+
+/* Animation */
+.animation-box {
+  width: 80px;
+  height: 80px;
+  background-color: purple;
+  border-radius: 50%;
+  animation-name: moveBall;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moveBall {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 250px;
+  }
+}
+
+/* Pseudo elements */
+.pseudo-text::before {
+  content: "👉 ";
+}
+
+.pseudo-text::after {
+  content: " 👈";
+}
+
+/* List */
+.list-demo {
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+.list-demo li {
+  background-color: #e0f2fe;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .box-model,
+  .overflow-box {
+    width: 100%;
+  }
+
+  .animation-box {
+    animation-name: smallMove;
+  }
+}
+
+@keyframes smallMove {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 120px;
+  }
+}
